@@ -1,7 +1,7 @@
 {
     "version": "0.0.2",
-    "pluginName": "Edge 小助手",
-    "description": "Microsoft Edge 小助手",
+    "pluginName": "Edge 小助手 Plus",
+    "description": "Microsoft Edge 小助手 Plus",
     "author": "Licardo",
     "homepage": "https://github.com/L1cardo/Edge-Helper-uTools",
     "preload": "preload.js",
@@ -23,7 +23,7 @@
             "code": "edge_bookmarks",
             "explain": "Edge 书签搜索",
             "cmds": [
-                "Edge BookMarks", "Edge 书签",
+                "Edge BookMarks", "Edge 书签","bm","b",
                 {
                     "type": "window",
                     "match": {

@@ -2,6 +2,8 @@ const path = require('path')
 const fs = require('fs')
 const { shell } = require('electron')
 const cp = require('child_process')
+const pinyin = require('pinyin')
+
 let bookmarksDataCache = null
 let tabListCache = []
 
@@ -29,6 +31,8 @@ function getEdgeBookmarks() {
           bookmarksData.push({
             lowTitle: c.name.toLowerCase(),
             title: c.name,
+            titlePinyin: pinyin(c.name, {style : pinyin.STYLE_FIRST_LETTER}).join(''),
+            titleFullPinyin: pinyin(c.name, {style : pinyin.STYLE_NORMAL}).join(''),
             description: c.url,
             icon: favicon
           })
@@ -75,7 +79,7 @@ window.exports = {
       search: (action, searchWord, callbackSetList) => {
         if (!searchWord) return callbackSetList()
         searchWord = searchWord.toLowerCase()
-        callbackSetList(bookmarksDataCache.filter(x => x.lowTitle.includes(searchWord)))
+        callbackSetList(bookmarksDataCache.filter(x => x.lowTitle.includes(searchWord) || x.titlePinyin.includes(searchWord) || x.titleFullPinyin.includes(searchWord)))
       },
       select: (action, itemData) => {
         window.utools.hideMainWindow()
