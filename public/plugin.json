@@ -1,9 +1,9 @@
 {
-    "version": "0.0.2",
-    "pluginName": "Edge 小助手 Plus",
-    "description": "Microsoft Edge 小助手 Plus",
+    "version": "0.0.3",
+    "pluginName": "Edge 小助手  全拼 首字母",
+    "description": "Microsoft Edge 小助手  全拼 首字母",
     "author": "Licardo",
-    "homepage": "https://github.com/L1cardo/Edge-Helper-uTools",
+    "homepage": "https://github.com/lgy2014/Edge-Helper-Pinyin-uTools",
     "preload": "preload.js",
     "logo": "logo.png",
     "features": [{
@@ -21,7 +21,7 @@
         {
             "platform": ["darwin", "win32"],
             "code": "edge_bookmarks",
-            "explain": "Edge 书签搜索",
+            "explain": "Edge 书签搜索 全拼 首字母",
             "cmds": [
                 "Edge BookMarks", "Edge 书签","bm","b",
                 {
@@ -29,7 +29,7 @@
                     "match": {
                         "app": ["Microsoft Edge.app", "msedge.exe"]
                     },
-                    "label": "Edge 书签搜索"
+                    "label": "Edge 书签搜索 全拼 首字母"
                 }
             ]
         },
