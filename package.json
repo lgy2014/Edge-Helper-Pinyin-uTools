@@ -1,0 +1,32 @@
+{
+  "name": "Edge-Helper-Pinyin-uTools",
+  "description": "> 通过 uTools 来查看和搜索 Edge 浏览器书签",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack -w",
+    "build": "webpack",
+    "build:prod": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgy2014/Edge-Helper-Pinyin-uTools.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lgy2014/Edge-Helper-Pinyin-uTools/issues"
+  },
+  "homepage": "https://github.com/lgy2014/Edge-Helper-Pinyin-uTools#readme",
+  "devDependencies": {
+    "aws-sdk": "^2.958.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "html-loader": "^2.1.2",
+    "mock-aws-s3": "^4.0.2",
+    "nock": "^13.1.1",
+    "webpack": "^5.47.1",
+    "webpack-cli": "^4.7.2"
+  }
+}

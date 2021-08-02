@@ -2,7 +2,7 @@ const path = require('path')
 const fs = require('fs')
 const { shell } = require('electron')
 const cp = require('child_process')
-const pinyin = require('pinyin')
+const pinyin = require('./index')
 
 let bookmarksDataCache = null
 let tabListCache = []
